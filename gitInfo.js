@@ -10,7 +10,8 @@
 */
 
 //CODE HERE
-
+let gitDefinition =
+  "Git is for version controll. It is a commandface interline, software, you give it commands and control it. It is your computer in a black box.";
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,7 +19,8 @@
 */
 
 //CODE HERE
-
+let gitHubDefinition =
+  "GitHub is a platform where you can upload copys of your code to the cloud to share with others and for safe keeping.";
 //////////////////PROBLEM 3////////////////////
 /*
     Create a variable called 'gitInitDefinition'.  
@@ -26,7 +28,7 @@
 */
 
 //CODE HERE
-
+let gitInitDefinition = "Git init initializes a new git repository";
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
@@ -64,7 +66,6 @@
 */
 
 //CODE HERE
-
 
 //////////////////PROBLEM 8////////////////////
 /*

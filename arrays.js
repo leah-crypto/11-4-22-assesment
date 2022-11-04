@@ -1,25 +1,28 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a copy of the faveColors array called 'colorCopy' using the slice method. */
 
-const faveColors = ['red', 'green', 'black']
+const faveColors = ["red", "green", "black"];
 
 //CODE HERE
-faveColors.slice();
+console.log(faveColors.slice());
 //////////////////PROBLEM 2////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
 faveColors.push("pink");
+console.log(faveColors);
 //////////////////PROBLEM 3////////////////////
 /*
   Using an array method, create a new array called 'middleNums' from the 
   numbers array that will capture only the middle numbers (2, 3, 4).
 */
 
-const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5];
 
-//CODE HERE
-
+//CODE HERE               //[1, 2, 3]; //splice??? Concat???
+const middleNums = numbers.slice(1, 3);
+// numbers.slice(1, 2, 3); //issues with this one***************
+console.log(middleNums);
 //const middleNums = [];
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -31,7 +34,21 @@ const numbers = [1, 2, 3, 4, 5]
   to the answers array. 
 */
 
-const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
+const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352];
 
 // CODE HERE
 const answers = [];
+//issues!*********************
+                                //if(bigOrSmallArray >= 100){
+for (let i = 0; i < bigOrSmallArray.length; i++) {
+  if (bigOrSmallArray >= 100) {
+    answers.push("BIG BOY!!!");
+    console.log(answers);
+  } else if (bigOrSmallArray <= 100) {
+                                            //console.log(answers["small, small, tiny, small.."]);
+    answers.push("small, small, tiny, small");
+    console.log(answers);
+  }
+}
+
+//}
