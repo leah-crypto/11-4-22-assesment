@@ -49,7 +49,7 @@ const pinkPrice = 0.55;
 
 // CODE HERE     //ISSUES!!!************
 let totalAcres = fujiAcres.concat(galaAcres + pinkAcres);
-for (let totalAcres = 0; i < totalAcres[i]; totalAcres++) {
+for (let i = 0; i < totalAcres; i++) {
   //return totalAcres;
   console.log(totalAcres);
 }

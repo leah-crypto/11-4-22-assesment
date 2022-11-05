@@ -40,15 +40,20 @@ const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352];
 const answers = [];
 //issues!*********************
                                 //if(bigOrSmallArray >= 100){
-for (let i = 0; i < bigOrSmallArray.length; i++) {
-  if (bigOrSmallArray >= 100) {
-    answers.push("BIG BOY!!!");
-    console.log(answers);
-  } else if (bigOrSmallArray <= 100) {
-                                            //console.log(answers["small, small, tiny, small.."]);
-    answers.push("small, small, tiny, small");
-    console.log(answers);
+
+  for (let i = 1; i < bigOrSmallArray.length; i++) {
+    if (bigOrSmallArray[i] >= 100) {
+      answers.push("BIG BOY!!!");
+      console.log(answers[i]);
+    } else if (bigOrSmallArray[i] <= 100) {
+                                              //console.log(answers["small, small, tiny, small.."]);
+      answers.push("small, small, tiny, small");
+      console.log(answers[i]);
+    }
+    
   }
-}
+  
+return answers;
+
 
 //}

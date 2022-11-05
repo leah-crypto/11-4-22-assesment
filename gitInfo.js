@@ -36,7 +36,7 @@ let gitInitDefinition = "Git init initializes a new git repository";
 */
 
 //CODE HERE
-
+let gitCloneDefinition = "When we use git clone it copys a Git repository which has already been made.";
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -44,7 +44,7 @@ let gitInitDefinition = "Git init initializes a new git repository";
 */
 
 //CODE HERE
-
+let gitStatusDefinition = "When git status is used we recieve the state of the directory we are working in as well as the staging area.";
 //////////////////PROBLEM 6////////////////////
 /*
     Create a variable called 'gitAddDefinition'.  
@@ -55,7 +55,8 @@ let gitInitDefinition = "Git init initializes a new git repository";
 */
 
 //CODE HERE
-
+let gitAddDefinition = "When we run git add changes are added from the directory to the staging area";
+let gitAddCode = "git add .";
 //////////////////PROBLEM 7////////////////////
 /*
     Create a variable called 'gitCommitDefinition'.  
@@ -66,7 +67,8 @@ let gitInitDefinition = "Git init initializes a new git repository";
 */
 
 //CODE HERE
-
+let gitCommitCode = 'git commit -m "Your message here"' || 'git commit a-'; //I believe other options are also open depending on what you want to do.
+let gitCommitDefinition = "A git commit is like a snapshot of your current project. Once the commit has happened it is like a saved copy you can come back to.";
 //////////////////PROBLEM 8////////////////////
 /*
     Create a variable called 'gitPushDefinition'.  
@@ -74,3 +76,4 @@ let gitInitDefinition = "Git init initializes a new git repository";
 */
 
 //CODE HERE
+let gitPushDefinition = "Git push is used to transfer the commits that have been made from your local computer/device to the remote/global repository (cloud)";
