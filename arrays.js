@@ -19,8 +19,10 @@ console.log(faveColors);
 
 const numbers = [1, 2, 3, 4, 5];
 
-//CODE HERE               //[1, 2, 3]; //splice??? Concat???
-const middleNums = numbers.slice(1, 3);
+//CODE HERE               //[1, 2, 3]; //splice??? Concat??? numbers.slice(1, 3);???
+const middleNums = numbers.splice(1, 3);
+
+//middleNums.push(1,2,3);
 // numbers.slice(1, 2, 3); //issues with this one***************
 console.log(middleNums);
 //const middleNums = [];
@@ -38,22 +40,32 @@ const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352];
 
 // CODE HERE
 const answers = [];
-//issues!*********************
-                                //if(bigOrSmallArray >= 100){
+// for (let i = 0; i < bigOrSmallArray.length; i++) {
+//   bigOrSmallArray[i] += 1;
+//   console.log(bigOrSmallArray);
+// }
+// if (bigOrSmallArray < 100) {
+//   console.log(answers.unshift("LESS!"));
+// } else if (bigOrSmallArray > 100) {
+//   console.log(answers.unshift("BIGGER!"));
+// }
 
-  for (let i = 1; i < bigOrSmallArray.length; i++) {
-    if (bigOrSmallArray[i] >= 100) {
-      answers.push("BIG BOY!!!");
-      console.log(answers[i]);
-    } else if (bigOrSmallArray[i] <= 100) {
-                                              //console.log(answers["small, small, tiny, small.."]);
-      answers.push("small, small, tiny, small");
-      console.log(answers[i]);
-    }
-    
+//issues!*********************
+//if(bigOrSmallArray >= 100){
+
+for (let i = 1; i < bigOrSmallArray.length; i++) {
+  bigOrSmallArray[i] += 1;
+  if (bigOrSmallArray[i] >= 100) {
+    answers.push("BIG BOY!!!");
+    console.log(answers[i]);
+  } else if (bigOrSmallArray[i] <= 100) {
+                                            //console.log(answers["small, small, tiny, small.."]);
+    answers.push("small, small, tiny, small");
+    console.log(answers[i]);
   }
-  
+
+}
+
 return answers;
 
 
-//}

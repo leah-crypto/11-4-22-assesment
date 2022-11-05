@@ -68,6 +68,15 @@ for (let i = 0; i < totalAcres; i++) {
 
 // CODE HERE
 
+let sum = 0;
+
+for (let i = 0; i < totalAcres; i++) {
+  sum += totalAcres; //totalAcres in these two spots is wrong
+}
+
+averageDailyAcres = sum / totalAcres.length;
+
+console.log(averageDailyAcres);
 // PROBLEM 3
 
 /*
