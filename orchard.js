@@ -26,10 +26,11 @@
     The prices are per pound and are written
     in cents. 
 */
-
-const fujiAcres = [2, 3, 3, 2, 2, 2, 1]; //15
+//All totalls from each
+const fujiAcres = [2, 3, 3, 2, 2, 2, 1]; //15            //adverage should be 3
 const galaAcres = [5, 2, 4, 3, 6, 2, 4]; //26
 const pinkAcres = [1, 5, 4, 2, 1, 5, 4]; //22
+//63   final total
 
 const fujiPrice = 0.89;
 const galaPrice = 0.64;
@@ -48,11 +49,41 @@ const pinkPrice = 0.55;
 */
 
 // CODE HERE     //ISSUES!!!************
-let totalAcres = fujiAcres.concat(galaAcres + pinkAcres);
-for (let i = 0; i < totalAcres; i++) {
-  //return totalAcres;
-  console.log(totalAcres);
+sum = 0;
+for (let i = 0; i < fujiAcres.length; i++) {
+  sum += fujiAcres[i];
 }
+console.log(sum);
+
+fun = 0;
+for (let i = 0; i < galaAcres.length; i++) {
+  fun += galaAcres[i];
+}
+console.log(fun);
+
+dum = 0;
+for (let i = 0; i < pinkAcres.length; i++) {
+  dum += pinkAcres[i];
+}
+console.log(dum);
+
+let totalAcres = sum + fun + dum;
+console.log(totalAcres);
+
+//code that I tried but it failed. I want to keep it here so I can learn from it as well.
+// const total = fujiAcres + "," + galaAcres + "," + pinkAcres;
+// //console.log(total);
+// const totalAcres = []; //total.length;
+
+// for (let i = 1; i < total.length; i++) {
+//   totalAcres.push(total[i]);
+// }
+// console.log(totalAcres);
+//let totalAcres = fujiAcres.concat(galaAcres + pinkAcres);
+// for (let i = 0; i < totalAcres; i++) {
+//   //return totalAcres;
+//   console.log(totalAcres);
+// }
 
 // PROBLEM 2
 
@@ -67,16 +98,26 @@ for (let i = 0; i < totalAcres; i++) {
 */
 
 // CODE HERE
+//totalAcres =  fujiAcres.concat(galaAcres + "," + pinkAcres);
+//console.log(totalAcres);
 
-let sum = 0;
+let sum2 = 1;
+//let j = 0;
 
-for (let i = 0; i < totalAcres; i++) {
-  sum += totalAcres; //totalAcres in these two spots is wrong
+// while(j < totalAcres.length){
+//     sum2 += totalAcres[j];
+//     j++
+// }
+//console.log(sum2);
+
+for (let i = 1; i < totalAcres.length; i++) {
+  //WHY ARE YOU NAN???? NPOTHING IS UNDEFINED!!!!!
+  sum2 += totalAcres[i]; //totalAcres in these two spots is wrong
 }
 
-averageDailyAcres = sum / totalAcres.length;
-
+let averageDailyAcres = sum2 / totalAcres.length;
 console.log(averageDailyAcres);
+
 // PROBLEM 3
 
 /*
@@ -111,6 +152,11 @@ let days = 0;
 
 // CODE HERE
 
+while (acresLeft >= 0) {
+  days++;
+  break;
+}
+console.log(days);
 // PROBLEM 4
 
 /*
@@ -136,10 +182,10 @@ let days = 0;
 */
 
 // CODE HERE
-
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+//these were premade without the brackets
+let fujiTons = [];
+let galaTons = [];
+let pinkTons = [];
 
 // PROBLEM 5
 

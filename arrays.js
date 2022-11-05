@@ -59,13 +59,10 @@ for (let i = 1; i < bigOrSmallArray.length; i++) {
     answers.push("BIG BOY!!!");
     console.log(answers[i]);
   } else if (bigOrSmallArray[i] <= 100) {
-                                            //console.log(answers["small, small, tiny, small.."]);
+    //console.log(answers["small, small, tiny, small.."]);
     answers.push("small, small, tiny, small");
     console.log(answers[i]);
   }
-
 }
 
 return answers;
-
-
