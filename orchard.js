@@ -32,10 +32,6 @@ const galaAcres = [5, 2, 4, 3, 6, 2, 4]; //26
 const pinkAcres = [1, 5, 4, 2, 1, 5, 4]; //22
 //63   final total
 
-const fujiPrice = 0.89;
-const galaPrice = 0.64;
-const pinkPrice = 0.55;
-
 // PROBLEM 1
 
 /*
@@ -53,19 +49,19 @@ sum = 0;
 for (let i = 0; i < fujiAcres.length; i++) {
   sum += fujiAcres[i];
 }
-console.log(sum);
+//console.log(sum);
 
 fun = 0;
 for (let i = 0; i < galaAcres.length; i++) {
   fun += galaAcres[i];
 }
-console.log(fun);
+//console.log(fun);
 
 dum = 0;
 for (let i = 0; i < pinkAcres.length; i++) {
   dum += pinkAcres[i];
 }
-console.log(dum);
+//console.log(dum);
 
 let totalAcres = sum + fun + dum;
 console.log(totalAcres);
@@ -111,12 +107,14 @@ let sum2 = 1;
 //console.log(sum2);
 
 for (let i = 1; i < totalAcres.length; i++) {
-  //WHY ARE YOU NAN???? NPOTHING IS UNDEFINED!!!!!
+  //WHY ARE YOU NAN???? NOTHING IS UNDEFINED!!!!!
   sum2 += totalAcres[i]; //totalAcres in these two spots is wrong
-}
 
+}
 let averageDailyAcres = sum2 / totalAcres.length;
 console.log(averageDailyAcres);
+
+
 
 // PROBLEM 3
 
@@ -149,11 +147,13 @@ console.log(averageDailyAcres);
 
 let acresLeft = 174;
 let days = 0;
+let dailyAd = 3; //having to use this for now because I cant get the above problem to work
 
 // CODE HERE
 
 while (acresLeft >= 0) {
   days++;
+  acresLeft - dailyAd; // dont think this is right
   break;
 }
 console.log(days);
@@ -164,7 +164,9 @@ console.log(days);
     that list the daily amount of apples 
     picked, in tons, for each variety. 
     
-    Each acre yields 6.5 tons of apples.
+    Each acre yields 6.5 tons of apples.  //97.5 fuji tons
+                                          //169  gala tons
+                                          //143  pink tons
 
     Use the variables below to store 
     your new arrays. Make sure that you
@@ -183,10 +185,43 @@ console.log(days);
 
 // CODE HERE
 //these were premade without the brackets
-let fujiTons = [];
-let galaTons = [];
-let pinkTons = [];
+let fujiTons = fujiAcres.slice();
+let galaTons = galaAcres.slice();
+let pinkTons = pinkAcres.slice();
 
+fujiTons = sum;
+galaTons = fun;
+pinkTons = dum;
+
+while (fujiTons > 0) {
+  var bill = sum * 6.5;
+  console.log(bill);
+  break;
+}
+//gala2 = galaAcres.slice();
+//console.log(gala2);
+while (galaTons > 0) {
+  var abby = fun * 6.5;
+  //return abby;
+  console.log(abby);
+  break;
+}
+
+while (pinkTons > 0) {
+  var bobby = dum * 6.5;
+  console.log(bobby);
+  break;
+}
+
+// for(i = abby; i < galaTons.length; i++){
+
+//     //gala2 += galaTons;
+//     console.log(galaTons[i]);
+// }
+
+// for (let i = 0; i < fujiAcres.length; i++){
+//     fujiTons.push(fujiAcres[]);
+// }
 // PROBLEM 5
 
 /*
@@ -205,9 +240,13 @@ let pinkTons = [];
 
 // CODE HERE
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let fujiPounds = bill * 2000;
+let galaPounds = abby * 2000;
+let pinkPounds = bobby * 2000;
+
+console.log(fujiPounds);
+console.log(galaPounds);
+console.log(pinkPounds);
 
 // PROBLEM 6
 
@@ -226,10 +265,17 @@ let pinkTons = [];
 */
 
 // CODE HERE
+const fujiPrice = 0.89;
+const galaPrice = 0.64;
+const pinkPrice = 0.55;
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = 0.89 * 195000;
+let galaProfit = 0.64 * 338000;
+let pinkProfit = 0.55 * 286000;
+
+console.log(fujiProfit);
+console.log(galaProfit);
+console.log(pinkProfit);
 
 // PROBLEM 7
 
@@ -242,3 +288,6 @@ let pinkTons = [];
 */
 
 // CODE HERE
+
+let grandTotal = fujiProfit + galaProfit + pinkProfit;
+console.log(grandTotal);
