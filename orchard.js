@@ -44,10 +44,12 @@ const pinkAcres = [1, 5, 4, 2, 1, 5, 4]; //22
     Log `totalAcres` to the console.
 */
 
-// CODE HERE     //ISSUES!!!************
-sum = 0;
+// CODE HERE
+sum = 0; //Initialize to zero
 for (let i = 0; i < fujiAcres.length; i++) {
-  sum += fujiAcres[i];
+  //for loop runs, sets i to zero to begin a index zero,
+  //have i continue for the length of fujiAcres which is 6. Increment i.
+  sum += fujiAcres[i]; //make sum equal to fujiAcres loop
 }
 //console.log(sum);
 
@@ -93,7 +95,7 @@ console.log(totalAcres);
     Log `averageDailyAcres` to the console.
 */
 
-// CODE HERE
+// CODE HERE  //I had issues with this one, I could never figure out why it is returning NaN.
 //totalAcres =  fujiAcres.concat(galaAcres + "," + pinkAcres);
 //console.log(totalAcres);
 
@@ -108,13 +110,10 @@ let sum2 = 1;
 
 for (let i = 1; i < totalAcres.length; i++) {
   //WHY ARE YOU NAN???? NOTHING IS UNDEFINED!!!!!
-  sum2 += totalAcres[i]; //totalAcres in these two spots is wrong
-
+  sum2 += totalAcres[i]; //totalAcres in these two spots is wrong maybe???
 }
 let averageDailyAcres = sum2 / totalAcres.length;
 console.log(averageDailyAcres);
-
-
 
 // PROBLEM 3
 
@@ -150,13 +149,14 @@ let days = 0;
 let dailyAd = 3; //having to use this for now because I cant get the above problem to work
 
 // CODE HERE
-
+//function(acresLeft ){ //should a function be created to call the wole while loop?
 while (acresLeft >= 0) {
   days++;
-  acresLeft - dailyAd; // dont think this is right
+  let j = acresLeft - dailyAd; // dont think this is right
   break;
 }
-console.log(days);
+console.log();
+//}
 // PROBLEM 4
 
 /*
@@ -185,34 +185,33 @@ console.log(days);
 
 // CODE HERE
 //these were premade without the brackets
-let fujiTons = fujiAcres.slice();
-let galaTons = galaAcres.slice();
+let fujiTons = fujiAcres.slice(); //puts the original array stored in fujiAcres (etc), into the new array
+let galaTons = galaAcres.slice(); //such as fujiTons as a copy through usng slice.
 let pinkTons = pinkAcres.slice();
 
-fujiTons = sum;
+fujiTons = sum; //making the new array equal to the value of what sum(fun, dum) had been defind as earlier in the program.
 galaTons = fun;
 pinkTons = dum;
 
 while (fujiTons > 0) {
-  var bill = sum * 6.5;
-  console.log(bill);
-  break;
+  //running fujiTons through while loop (greater than 0)
+  var bill = fujiTons * 6.5; //creating var that multiplies value of fujiTons by 6.5
+  console.log(bill); //printing bill
+  break; //stopping the loop
 }
-//gala2 = galaAcres.slice();
-//console.log(gala2);
+
 while (galaTons > 0) {
-  var abby = fun * 6.5;
-  //return abby;
+  var abby = galaTons * 6.5;
   console.log(abby);
   break;
 }
 
 while (pinkTons > 0) {
-  var bobby = dum * 6.5;
+  var bobby = pinkTons * 6.5;
   console.log(bobby);
   break;
 }
-
+//some code I tried at first but didnt work
 // for(i = abby; i < galaTons.length; i++){
 
 //     //gala2 += galaTons;
@@ -240,11 +239,11 @@ while (pinkTons > 0) {
 
 // CODE HERE
 
-let fujiPounds = bill * 2000;
-let galaPounds = abby * 2000;
+let fujiPounds = bill * 2000; //using the vars I created in the last problem I take the value of those
+let galaPounds = abby * 2000; //times 2000
 let pinkPounds = bobby * 2000;
 
-console.log(fujiPounds);
+console.log(fujiPounds); //print the results to the console
 console.log(galaPounds);
 console.log(pinkPounds);
 
@@ -265,15 +264,15 @@ console.log(pinkPounds);
 */
 
 // CODE HERE
-const fujiPrice = 0.89;
+const fujiPrice = 0.89; // code provided at the top of the program
 const galaPrice = 0.64;
 const pinkPrice = 0.55;
 
-let fujiProfit = 0.89 * 195000;
-let galaProfit = 0.64 * 338000;
-let pinkProfit = 0.55 * 286000;
+let fujiProfit = fujiPrice * fujiPounds; //times the values of the prices by the pounds and hold that sum in a var
+let galaProfit = galaPrice * galaPounds; 
+let pinkProfit = pinkPrice * pinkPounds;
 
-console.log(fujiProfit);
+console.log(fujiProfit); //print the total
 console.log(galaProfit);
 console.log(pinkProfit);
 
@@ -289,5 +288,5 @@ console.log(pinkProfit);
 
 // CODE HERE
 
-let grandTotal = fujiProfit + galaProfit + pinkProfit;
-console.log(grandTotal);
+let grandTotal = fujiProfit + galaProfit + pinkProfit; //add all three profits together 
+console.log(grandTotal); //print the final total
