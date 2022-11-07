@@ -149,13 +149,14 @@ let days = 0;
 let dailyAd = 3; //having to use this for now because I cant get the above problem to work
 
 // CODE HERE
-//function(acresLeft ){ //should a function be created to call the wole while loop?
+//function(acresLeft ){ //should a function be created to call the whole while loop?
 while (acresLeft >= 0) {
   days++;
   let j = acresLeft - dailyAd; // dont think this is right
+  console.log(j);
   break;
 }
-console.log();
+
 //}
 // PROBLEM 4
 
@@ -269,7 +270,7 @@ const galaPrice = 0.64;
 const pinkPrice = 0.55;
 
 let fujiProfit = fujiPrice * fujiPounds; //times the values of the prices by the pounds and hold that sum in a var
-let galaProfit = galaPrice * galaPounds; 
+let galaProfit = galaPrice * galaPounds;
 let pinkProfit = pinkPrice * pinkPounds;
 
 console.log(fujiProfit); //print the total
@@ -288,5 +289,5 @@ console.log(pinkProfit);
 
 // CODE HERE
 
-let grandTotal = fujiProfit + galaProfit + pinkProfit; //add all three profits together 
+let grandTotal = fujiProfit + galaProfit + pinkProfit; //add all three profits together
 console.log(grandTotal); //print the final total

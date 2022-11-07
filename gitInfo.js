@@ -11,7 +11,7 @@
 
 //CODE HERE
 let gitDefinition =
-  "Git is for version controll. It is a commandface interline, software, you give it commands and control it. It is your computer in a black box.";
+  "Git is for version control. It is a command-line interface, software, you give it commands and control it. It is your computer in a black box.";
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
